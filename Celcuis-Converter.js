@@ -37,4 +37,4 @@ function convertFahrToCelsius(fahrenhiet) {
 }
 
 
-convertFahrToCelsius(23);
+// convertFahrToCelsius(23);

@@ -3,7 +3,7 @@
 function checkYuGioh(n) {
     let myArray = []
 
-    if (n === null || isNaN(n)) {
+    if (n === null || isNaN(n) || typeof n == "boolean") {
         console.log(`invalid parameter: ${n}`)
     } else {
         for (let i = 1; i <= n; i++) {
@@ -34,4 +34,4 @@ function checkYuGioh(n) {
 
 }
 
-checkYuGioh("30");
+checkYuGioh(false);
