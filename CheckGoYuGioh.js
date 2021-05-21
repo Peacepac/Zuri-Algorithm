@@ -1,37 +1,37 @@
 // CheckYuGiOh Algorithm
 
-function checkYuGioh(n) {
-    let myArray = []
+function checkYuGioh(e) {
+    let checkYuGiohArray = []
 
-    if (n === null || isNaN(n) || typeof n == "boolean") {
-        console.log(`invalid parameter: ${n}`)
+    if (e === null || isNaN(e) || typeof e == "boolean") {
+        console.log(`invalid parameter: ${e}`)
     } else {
-        for (let i = 1; i <= n; i++) {
-            if (n == 1) {
+        for (let i = 1; i <= e; i++) {
+            if (e == 1) {
                 console.log(1);
             } else if (i % 2 == 0 && i % 3 == 0 && i % 5 == 0) {
-                myArray.push("yu-gi-oh");
+                checkYuGiohArray.push("yu-gi-oh");
 
             } else if (i % 2 == 0 && i % 3 == 0) {
-                myArray.push("yu-gi");
+                checkYuGiohArray.push("yu-gi");
             } else if (i % 2 == 0 && i % 5 == 0) {
-                myArray.push("yu-oh");
+                checkYuGiohArray.push("yu-oh");
             } else if (i % 3 == 0 && i % 5 == 0) {
-                myArray.push("gi-oh");
+                checkYuGiohArray.push("gi-oh");
             } else if (i % 2 == 0) {
-                myArray.push("yu");
+                checkYuGiohArray.push("yu");
             } else if (i % 3 == 0) {
-                myArray.push("gi");
+                checkYuGiohArray.push("gi");
             } else if (i % 5 == 0) {
-                myArray.push("oh");
+                checkYuGiohArray.push("oh");
             } else {
-                myArray.push("" + i)
+                checkYuGiohArray.push("" + i)
             }
         }
-        console.log(myArray)
+        console.log(checkYuGiohArray)
     }
 
 
 }
 
-checkYuGioh(false);
+checkYuGioh(null);
