@@ -1,38 +1,35 @@
-let convertFahrToCelsius = (f) => {
-    if (typeof f == 'number') {
+function convertFahrToCelsius(fahrenhiet) {
+    if (typeof fahrenhiet == 'number') {
 
-        let celsius = ((f - 32) * (5 / 9));
-        return (celsius.toFixed(4))
+        let celsius = ((fahrenhiet - 32) * (5 / 9));
+        console.log(celsius.toFixed(4))
 
-    } else if (typeof f == 'object') {
-        if (Array.isArray(f)) {
+    } else if (typeof fahrenhiet == 'object') {
+        if (Array.isArray(fahrenhiet)) {
 
 
 
-            console.log(`${JSON.stringify(f)} is not a valid number but an Array`)
+            console.log(`${JSON.stringify(fahrenhiet)} is not a valid number but an Array`)
         } else {
-            const a = f;
 
-            output = `${JSON.stringify(f)} is not a valid number but a ${typeof f}.`
-            return output
+            console.log(`${JSON.stringify(fahrenhiet)} is not a valid number but a/an ${typeof fahrenhiet} type.`)
         }
 
 
-    } else if (typeof f == 'string') {
+    } else if (typeof fahrenhiet == 'string') {
 
-        console.log('')
-        let fNumber = Number(f);
-        // let celsius = ((fNumber - 32) * (5/9));
+        let fahrenhietNumber = Number(fahrenhiet);
 
-        if (isNaN(fNumber)) {
-            console.log("this is not a number")
-            return (`${f} is not a valid number but a ${typeof f}.`)
+
+        if (isNaN(fahrenhietNumber)) {
+
+            console.log(`${fahrenhiet} is not a valid number but a/an ${typeof fahrenhiet} type.`)
         } else {
-            let celsius = ((fNumber - 32) * (5 / 9));
-            return (celsius.toFixed(4))
+            let celsius = ((fahrenhietNumber - 32) * (5 / 9));
+            console.log(celsius.toFixed(4))
         }
     } else {
-        console.log(`${JSON.stringify(f)} is not a valid number but a/an null type`);
+        console.log(`${JSON.stringify(fahrenhiet)} is not a valid number but a/an null type`);
 
 
 
@@ -40,4 +37,4 @@ let convertFahrToCelsius = (f) => {
 }
 
 
-convertFahrToCelsius([1, 2.3]);
+convertFahrToCelsius(23);
