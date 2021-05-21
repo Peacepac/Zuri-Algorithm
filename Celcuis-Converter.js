@@ -9,7 +9,7 @@ let convertFahrToCelsius = (f) => {
 
 
 
-            return `${JSON.stringify(f)} is not a valid number but an Array`
+            console.log(`${JSON.stringify(f)} is not a valid number but an Array`)
         } else {
             const a = f;
 
@@ -40,4 +40,4 @@ let convertFahrToCelsius = (f) => {
 }
 
 
-convertFahrToCelsius(0);
+convertFahrToCelsius([1, 2.3]);

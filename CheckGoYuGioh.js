@@ -34,4 +34,4 @@ function checkYuGioh(n) {
 
 }
 
-checkYuGioh("30");
+//checkYuGioh("30");
